@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halloween Quote Box</title>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Creepster', cursive;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            margin: 0;
+            background: linear-gradient(145deg, #191919, #1c1c1c); /* Gradient background */
+            color: #9d68d3;
+        }
+
+        .quote-container {
+            position: relative;
+            width: 320px;
+            text-align: center;
+            background-color: #000000; /* Inner background color */
+            border-radius: 15px; /* Rounded corners for the container */
+            padding: 30px; /* Add padding to keep emojis inside */
+            box-shadow: 0 0 15px #9d68d3, 0 4px 8px rgba(0, 0, 0, 0.5); /* Added glow effect */
+            border: 2px solid #9d68d3; /* Purple border */
+            color: #9d68d3;
+        }
+
+        .quote-text {
+            font-family: 'Creepster', cursive; /* Halloween-themed font for the quote */
+            font-size: 1.4rem;
+            margin: 0;
+        }
+
+        .author {
+            font-family: 'Creepster', cursive; /* Creepster font for author */
+            font-size: 1rem;
+            margin-top: 10px;
+            color: #9d68d3; /* Lighter purple for the author's name */
+        }
+
+        .emoji {
+            position: absolute;
+            font-size: 1.5rem;
+            opacity: 0.8; /* Slight transparency for subtle effect */
+        }
+
+        .emoji.top-left {
+            top: 10px; /* Adjust to keep inside the border */
+            left: 10px;
+        }
+
+        .emoji.top-right {
+            top: 10px; /* Adjust to keep inside the border */
+            right: 10px;
+        }
+
+        .emoji.bottom-left {
+            bottom: 10px; /* Adjust to keep inside the border */
+            left: 10px;
+        }
+
+        .emoji.bottom-right {
+            bottom: 10px; /* Adjust to keep inside the border */
+            right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="quote-container">
+        <!-- Halloween Emojis in Four Corners -->
+        <span class="emoji top-left">🎃</span>
+        <span class="emoji top-right">👻</span>
+        <span class="emoji bottom-left">🦇</span>
+        <span class="emoji bottom-right">🕷️</span>
+
+        <!-- Quote Text -->
+        <p class="quote-text">"Feel the fear and do it anyway."</p>
+        <p class="author">- Susan Jeffers</p>
+    </div>
+</body>
+</html>
